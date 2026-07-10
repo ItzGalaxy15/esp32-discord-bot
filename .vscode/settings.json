@@ -1,0 +1,21 @@
+{
+  "idf.extensionActivationMode": "always",
+  "idf.eimIdfJsonPath": "C:\\Espressif\\tools\\eim_idf.json",
+  "idf.currentSetup": "D:\\esp\\v6.0.2\\esp-idf",
+  "idf.gitPathWin": "C:\\Espressif\\tools\\git\\cmd\\git.exe",
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32"
+},
+  "clangd.path": "D:\\Espressif\\tools\\esp-clang\\esp-20.1.1_20250829\\esp-clang\\bin\\clangd.exe",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=**",
+    "--compile-commands-dir=d:\\Development\\esp32-discord-bot\\build"
+],
+"idf.openOcdConfigs": [
+    "interface/ftdi/esp32_devkitj_v1.cfg",
+    "target/esp32.cfg"
+],
+"idf.portWin": "COM6",
+"idf.flashType": "UART"
+}

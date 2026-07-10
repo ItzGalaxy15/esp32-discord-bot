@@ -1,0 +1,44 @@
+# ESP-IDF build output
+build/
+sdkconfig.old
+sdkconfig.defaults.old
+
+# Component manager (downloaded dependencies)
+managed_components/
+
+# Local sdkconfig contains WiFi password and Discord bot token
+sdkconfig
+
+# Secrets and local credentials (never commit)
+main/secrets.h
+secrets.h
+.env
+.env.*
+
+# TLS certificates (if generated locally)
+cert/
+certs/
+*.pem
+*.key
+*.crt
+
+# IDE and editor
+.cache/
+.clangd/
+.vscode/*.log
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and diagnostics
+*.log
+esp_idf_vsc_ext.log
+idf-diag-*/
+
+# Compiled binaries in project root
+*.bin
+*.elf
+*.map
