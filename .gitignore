@@ -6,18 +6,23 @@ sdkconfig.defaults.old
 # Component manager (downloaded dependencies)
 managed_components/
 
+# Local copy of esp-discord (clone with scripts/setup_components.ps1)
+components/esp-discord/.git/
+
 # Local sdkconfig contains WiFi password and Discord bot token
 sdkconfig
 
 # Secrets and local credentials (never commit)
 main/secrets.h
-secrets.h
+scripts/
+
 .env
 .env.*
 
 # TLS certificates (if generated locally)
 cert/
 certs/
+components/esp-discord/cert/
 *.pem
 *.key
 *.crt
