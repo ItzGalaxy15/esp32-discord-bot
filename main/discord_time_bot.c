@@ -28,7 +28,7 @@ static void format_eu_time(char *buf, size_t buflen)
 
     time(&now);
     localtime_r(&now, &timeinfo);
-    strftime(buf, buflen, "%m/%d %H:%M %Z", &timeinfo);
+    strftime(buf, buflen, "%d/%m %H:%M %Z", &timeinfo);
 }
 
 static void update_presence(void)
